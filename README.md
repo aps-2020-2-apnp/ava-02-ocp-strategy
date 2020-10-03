@@ -1,6 +1,6 @@
 # Avaliação #02 Open/Close Principle & Strategy
 
-Classroom: <>
+Classroom: <https://classroom.github.com/a/MvvsrRZL>
 
 Considere a seguinte situação:
 
