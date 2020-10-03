@@ -9,7 +9,7 @@
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "editor.formatOnSave": false,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'Consolas', 'Droid Sans Mono', 'monospace'",
+  "editor.fontFamily": "'Source Code Pro', 'Consolas', 'Droid Sans Mono', 'monospace'",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
   "vsicons.dontShowNewVersionMessage": true,

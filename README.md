@@ -1,19 +1,28 @@
-# Template
+# Avaliação #02 Open/Close Principle & Strategy
 
-Um _template_ é um modelo para novos projetos, para não iniciar do zero e ter pelo menos uma estrutura onde se apoiar.
+Classroom: <>
 
-Antes de começar a desenvolver com este _template_ é necessário ter instalado o [Node.js](https://nodejs.org/en/download/), [Git](https://git-scm.com/download/win)  e o [Visual Studio Code](https://code.visualstudio.com/).
+Considere a seguinte situação:
 
-Usando o Linux, é necessário baixar os pacotes `.deb` nos sites (clicar nos _links_ acima) e prosseguir a instalação. O Git pode ser instalado com o comando `sudo apt-get install git`.
+```typescript
+const jog3 = new Jogador('Peter', 'arqueiro', 70)
+console.log(jog3.arma) // desarmado
+jog3.pega('arco')
+jog3.ataca(jog1)
+console.log(jog1.vida) // 40
+jog3.pega('faca')
+jog3.ataca(jog1)
+console.log(jog1.vida) // 30
+```
 
-## Configurações do Visual Studio Code
+Como o projeto poderia ser estendido, para aceitar novos personagens e, principalmente, armas, respeitando o OCP?
 
-As configurações que uso no Visual Studio Code estão no arquivo `./.vscode/settings.json`, sintam-se a vontade para usá-las total ou parcialmente no seu vscode. Eu recomendo pelo menos o `wrap` e as _exclusions_ que melhoram a performance nos projetos Node.js.
+A tarefa é identificar o algoritmo variável e separá-lo usando o Padrão de Projeto Estratégia.
 
-## Node.js
+Para avaliar, experimente introduzir uma nova arma com regras específicas. Isto deve ser possível por adicionar novas classes (e uma alteração no `main.ts`) e só, não devem ser necessárias alterações em classes estáveis, como `Jogador`.
 
-A partir da linha de comando, execute `npm install`, isso vai gerar o diretório `node_modules`, que **nunca deve ser copiado para pendrives ou transferido por e-mail**, já que só depende do arquivo `package.json` para gerar novamente com o comando citado.
+## Desafios (extras)
 
-## Rodando
-
-Para _rodar_ o projeto execute o comando `npm start`.
+- E se o jogador pode portar duas armas?
+- E se nem tudo é arma? Por exemplo, e se o item pode ser usado para curar?
+- O jogador pode atacar a si mesmo?
